@@ -1,0 +1,24 @@
+#commentbox {
+    background: #fff;
+    border: 5px solid #aaa;
+    height: auto;
+    left: 0;
+    margin: 0 auto;
+    padding: 40px 20px;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    top: 25%;
+    width: 35%;
+    z-index: 99999999;
+    -webkit-box-shadow: 0px 0px 17px 10px rgba(255,255,255,0.16);
+    -moz-box-shadow: 0px 0px 17px 10px rgba(255,255,255,0.16);
+    box-shadow: 0px 0px 17px 10px rgba(255,255,255,0.16);
+}
+.poup-div-close-quote {
+    float: right;
+    width: 25px;
+    margin-top: -39px;
+	margin-right: -18px;
+    height: 5px;
+}

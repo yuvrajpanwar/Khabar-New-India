@@ -1,0 +1,14 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+Disallow: /news-admin
+
+User-agent : Adsbot-Google
+Allow: /
+
+User-agent : Googlebot-Mobile
+Allow: /
+
+Sitemap: https://khabarnewindia.com/sitemap.xml

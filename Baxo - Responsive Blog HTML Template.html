@@ -1,0 +1,2338 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://localhost/baxo/index.php -->
+<html lang="zxx" class="theme-light"><!-- Mirrored from templates.hibootstrap.com/baxo/default/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 Jun 2023 07:00:27 GMT --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./Baxo - Responsive Blog HTML Template_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Baxo - Responsive Blog HTML Template_files/remixicon.css">
+    <link rel="stylesheet" href="./Baxo - Responsive Blog HTML Template_files/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="./Baxo - Responsive Blog HTML Template_files/flaticon_baxo.css">
+    <link rel="stylesheet" href="./Baxo - Responsive Blog HTML Template_files/swiper.bundle.min.css">
+    <link rel="stylesheet" href="./Baxo - Responsive Blog HTML Template_files/aos.css">
+    <link rel="stylesheet" href="./Baxo - Responsive Blog HTML Template_files/header.css">
+    <link rel="stylesheet" href="./Baxo - Responsive Blog HTML Template_files/style.css">
+    <link rel="stylesheet" href="./Baxo - Responsive Blog HTML Template_files/footer.css">
+    <link rel="stylesheet" href="./Baxo - Responsive Blog HTML Template_files/responsive.css">
+    <link rel="stylesheet" href="./Baxo - Responsive Blog HTML Template_files/dark-theme.css">
+    <title>Baxo - Responsive Blog HTML Template</title>
+    <link rel="icon" type="image/png" href="http://localhost/baxo/assets/img/favicon.webp">
+
+    <style>
+        .news-card-one .news-card-img
+        {
+            
+            width: 100px; /* Adjust the size to your desired width and height */
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .news-card-one .news-card-img img
+        {
+            
+            width: 100%;
+            height:100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        @media screen and (min-width:1200px){
+            .small-img-cards-3col{
+                width:120px;
+                height:120px;
+            }
+            .small-img-cards-2col{
+                width: 213px;
+                height: 171px;
+            }
+
+
+            .news-card-five .news-card-img{
+                width: 190px; /* Adjust the size to your desired width and height */
+                height: 120px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .news-card-five .news-card-img img
+            {
+                width: 100%;
+                height:100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+
+            .news-card-six .news-card-img{
+                overflow: hidden;
+                height:153px;
+                width:270px;
+            }
+            .news-card-six .news-card-img img
+            {
+                width: 100%;
+                height:auto;
+            }
+            .news-card-seven .news-card-img{
+                overflow: hidden;
+                height:90px;
+                width:160px;
+            }
+            .news-card-seven .news-card-img img
+            {
+                width: 100%;
+                height:auto;
+            }
+            .news-card-eleven .news-card-img{
+                overflow: hidden;
+                height:327px;
+                width:577px;
+            }
+            .news-card-eleven .news-card-img img
+            {
+                width: 100%;
+                height:auto;
+            }
+            .news-card-thirteen .news-card-img{
+                overflow: hidden;
+                height:198px;
+                width:352px;
+            }
+            .news-card-thirteen .news-card-img img
+            {
+                width: 100%;
+                height:auto;
+            }
+
+
+            article .news-img{
+                overflow: hidden;
+                height:412px;
+                width:700px;
+                display: flex;
+                flex-direction: row;
+            }
+            article .news-img img
+            {
+                flex: 1;
+                width: 100%;
+                height:auto;
+            }
+
+        }
+
+        @media screen and (min-width: 480px) {
+        .leftsidebar {width: 300px; float: left;}       
+        }
+
+       @media (min-width: 992px) {
+        .sidebar-toggler {
+            display: none;
+        }
+}
+
+        a.pagination-link {
+            color: blue !important; /* Unclicked link color */
+            text-decoration: none !important; /* Remove underline */
+        }
+
+        a.pagination-link:hover {
+            color: red !important; /* Hovered link color */
+        }
+
+        a.pagination-link:visited {
+            color: red !important; /* Visited link color */
+        }
+
+        a.pagination-link:focus {
+            color: red !important; /* active link color */
+        }
+
+    </style>
+
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" class="loaded">
+
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+
+    <div class="switch-theme-mode">
+        <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <!-- main nevbar  -->
+    <div class="navbar-area header-one sticky" id="navbar">
+
+        
+        <div class="header-top">
+            <div class="container-fluid">                       
+                <div class="row align-items-center justify-content-end ">
+
+                    <!-- <div class="col-lg-4 col-md-6 col-5">
+                        <button class="subscribe-btn" data-bs-toggle="modal"
+                            data-bs-target="#newsletter-popup">Subscribe<i class="flaticon-right-arrow"></i></button>
+                    </div> -->
+                    <div class="col-lg-4 col-md-6 md-none offset-lg-4">
+                        <a class="navbar-brand" href="http://localhost/baxo/index.php">
+                            <img class="logo-light" src="./Baxo - Responsive Blog HTML Template_files/logo-white.webp" alt="logo">
+                            <img class="logo-dark" src="./Baxo - Responsive Blog HTML Template_files/logo-white.webp" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-7 pr-4">
+                        <ul class="social-profile list-style ">
+                            <li>
+                                <a href="https://www.fb.com/" target="_blank">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com/" target="_blank">
+                                    <i class="ri-twitter-fill"></i>
+                                </a>
+                            </li>
+                            <li><a href="https://www.instagram.com/" target="_blank">
+                                <i class="ri-instagram-line"></i>
+                                </a>
+                            </li>
+                            <!-- <li>
+                                <a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                            </li> -->
+                        </ul>
+                    </div>
+
+                </div>                  
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                <a class="sidebar-toggler md-none" data-bs-toggle="offcanvas" href="http://localhost/baxo/index.php#navbarOffcanvas" role="button" aria-controls="navbarOffcanvas" style="width: 30px;">
+                    <img src="./Baxo - Responsive Blog HTML Template_files/menubar-white.svg" alt="Image">
+                </a>
+
+                <a class="navbar-brand d-lg-none" href="http://localhost/baxo/index.php">
+                    <img class="logo-light" src="./Baxo - Responsive Blog HTML Template_files/logo-white.webp" alt="logo">
+                    <img class="logo-dark" src="./Baxo - Responsive Blog HTML Template_files/logo-white.webp" alt="logo">
+                </a>
+
+                <button type="button" class="search-btn d-lg-none" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <i class="flaticon-loupe"></i>
+                
+                </button>
+
+                <a class="navbar-toggler" data-bs-toggle="offcanvas" href="http://localhost/baxo/index.php#navbarOffcanvas" role="button" aria-controls="navbarOffcanvas">
+                    <span class="burger-menu">
+                        <span class="top-bar"></span>
+                        <span class="middle-bar"></span>
+                        <span class="bottom-bar"></span>
+                    </span>
+                </a>
+
+                <div class="collapse navbar-collapse">
+
+                    <ul class="navbar-nav mx-auto">
+
+                        <li class="nav-item">
+                            <a href="http://localhost/baxo/index.php" class=" nav-link">
+                                होम
+                            </a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="http://localhost/baxo/section-MQ==">उत्तराखण्ड </a>
+                            <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-NA==">चमोली</a></li><li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-Ng==">देहरादून</a></li><li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-OA==">नैनीताल</a></li><li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-MTM=">उधमसिंह नगर</a></li><li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-MTQ=">उत्तरकाशी</a></li><li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-MzQ=">रुद्रप्रयाग</a></li><li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-Mzk=">टिहरी</a></li><li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-NTE=">हरिद्वार</a></li><li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-NjM=">पौड़ी</a></li><li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-NzA=">पिथौरागढ़</a></li><li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-NzM=">बागेश्वर</a></li><li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-Nzg=">अल्मोड़ा</a></li><li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-ODE=">चंपावत</a></li><li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-ODQ=">नैनीताल</a></li>							</ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="http://localhost/baxo/section-MTU=">उत्तरप्रदेश</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-OTc=">लखनऊ</a></li><li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-OTg=">मुज़फ्फरनगर</a></li><li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-OTk=">सहारनपुर</a></li><li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-MTAw">मेरठ</a></li><li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-MTAx">बागपत</a></li><li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-MTAy">शामली</a></li> 
+                             </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-MTc=">देश</a></li>
+                        
+                        <li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-MTAz">विदेश </a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-MTk=">खेल</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-MjI=">शिक्षा</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-MjU=">क्राइम</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-MTA0">धर्म </a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="http://localhost/baxo/section-MTA1">लाइफस्टाइल</a></li>
+                       
+                        <li class="nav-item"><a href="http://localhost/baxo/video-news.php" class=" nav-link">वीडियो</a></li>
+
+                        <!-- <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="about.html" class="nav-link">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link">
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="team.html" class="nav-link">
+                                        Team
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="author.html" class="nav-link">
+                                        Author
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="privacy-policy.html" class="nav-link">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="terms-conditions.html" class="nav-link">
+                                        Terms & Conditions
+                                    </a>
+                                </li>
+                            </ul>
+                        </li> -->
+
+                    </ul>
+
+                    <!-- <div class="others-option d-flex align-items-center">
+
+                        <div class="option-item">
+                            <button type="button" class="search-btn" data-bs-toggle="modal"
+                                data-bs-target="#searchModal">
+                                <i class="flaticon-loupe"></i>
+                            </button>
+                        </div>
+
+                        <div class="option-item">
+                            <a href="login.html" class="btn-two">Sign In</a>
+                        </div>
+                    </div> -->
+
+                </div>
+            </nav>
+        </div>
+
+    </div>
+
+
+    <!-- side nevbar  -->
+    <div class="responsive-navbar offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="navbarOffcanvas">
+        
+        <div class="offcanvas-header">
+            <a href="http://localhost/baxo/index.php" class="logo d-inline-block">
+                <img class="logo-light" src="./Baxo - Responsive Blog HTML Template_files/logo.webp" alt="logo">
+                <img class="logo-dark" src="./Baxo - Responsive Blog HTML Template_files/logo-white.webp" alt="logo">
+            </a>
+            <button type="button" class="close-btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+
+        <div class="offcanvas-body">
+            <div class="accordion" id="navbarAccordion">
+                <div class="accordion-item">
+                    <b><a href="http://localhost/baxo/index.php" class=" nav-link">
+                        होम
+                    </a><b>                    
+                </b></b></div><b><b>
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapbaxour" aria-expanded="false" aria-controls="collapbaxour">
+                        उत्तराखण्ड                    </button>
+                    <div id="collapbaxour" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
+                        <div class="accordion-body">
+                            <div class="accordion" id="navbarAccordion45">
+                                <div class="accordion-item">
+                                    <div class="accordion-item"><a class="accordion-link" href="http://localhost/baxo/section-NA==">चमोली</a></div><div class="accordion-item"><a class="accordion-link" href="http://localhost/baxo/section-Ng==">देहरादून</a></div><div class="accordion-item"><a class="accordion-link" href="http://localhost/baxo/section-OA==">नैनीताल</a></div><div class="accordion-item"><a class="accordion-link" href="http://localhost/baxo/section-MTM=">उधमसिंह नगर</a></div><div class="accordion-item"><a class="accordion-link" href="http://localhost/baxo/section-MTQ=">उत्तरकाशी</a></div><div class="accordion-item"><a class="accordion-link" href="http://localhost/baxo/section-MzQ=">रुद्रप्रयाग</a></div><div class="accordion-item"><a class="accordion-link" href="http://localhost/baxo/section-Mzk=">टिहरी</a></div><div class="accordion-item"><a class="accordion-link" href="http://localhost/baxo/section-NTE=">हरिद्वार</a></div><div class="accordion-item"><a class="accordion-link" href="http://localhost/baxo/section-NjM=">पौड़ी</a></div><div class="accordion-item"><a class="accordion-link" href="http://localhost/baxo/section-NzA=">पिथौरागढ़</a></div><div class="accordion-item"><a class="accordion-link" href="http://localhost/baxo/section-NzM=">बागेश्वर</a></div><div class="accordion-item"><a class="accordion-link" href="http://localhost/baxo/section-Nzg=">अल्मोड़ा</a></div><div class="accordion-item"><a class="accordion-link" href="http://localhost/baxo/section-ODE=">चंपावत</a></div><div class="accordion-item"><a class="accordion-link" href="http://localhost/baxo/section-ODQ=">नैनीताल</a></div>                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        उत्तरप्रदेश                    </button>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
+                        <div class="accordion-body">
+                            <div class="accordion" id="navbarAccordion7">
+
+                                <div class="accordion-item"><a class="accordion-link" href="http://localhost/baxo/section-OTc=">लखनऊ</a></div><div class="accordion-item"><a class="accordion-link" href="http://localhost/baxo/section-OTg=">मुज़फ्फरनगर</a></div><div class="accordion-item"><a class="accordion-link" href="http://localhost/baxo/section-OTk=">सहारनपुर</a></div><div class="accordion-item"><a class="accordion-link" href="http://localhost/baxo/section-MTAw">मेरठ</a></div><div class="accordion-item"><a class="accordion-link" href="http://localhost/baxo/section-MTAx">बागपत</a></div><div class="accordion-item"><a class="accordion-link" href="http://localhost/baxo/section-MTAy">शामली</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <b><a class="nav-link" href="http://localhost/baxo/section-MTc=">देश</a></b>                   
+                </div>
+                <div class="accordion-item">
+                    <b><a class="nav-link" href="http://localhost/baxo/section-MTAz">विदेश </a></b>                   
+                </div>
+                <div class="accordion-item">
+                    <a class="nav-link" href="http://localhost/baxo/section-MTk=">खेल</a>                    
+                </div>
+                <div class="accordion-item">
+                    <a class="nav-link" href="http://localhost/baxo/section-MjI=">शिक्षा</a>                    
+                </div>
+                <div class="accordion-item">
+                    <a href="http://localhost/baxo/video-news.php" class=" nav-link">वीडियो</a>                    
+                </div>
+            </b></b></div><b><b>
+            <div class="offcanvas-contact-info">
+                <h4>Contact Info</h4>
+                <ul class="contact-info list-style">
+                    <li>
+                        <i class="ri-map-pin-fill"></i>
+                        <p>28/A Street, New York, USA</p>
+                    </li>
+                    <li>
+                        <i class="ri-mail-fill"></i>
+                        <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#91f9f4fdfdfed1f3f0e9febff2fefc"><span class="__cf_email__" data-cfemail="f49c9198989bb496958c9bda979b99">[email&nbsp;protected]</span></a>
+                    </li>
+                    <li>
+                        <i class="ri-phone-fill"></i>
+                        <a href="tel:1800123456789">+1 800 123 456 789</a>
+                    </li>
+                </ul>
+                <ul class="social-profile list-style">
+                    <li><a href="https://www.fb.com/" target="_blank"><i class="ri-facebook-fill"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-line"></i></a></li>
+                    <!-- <li><a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-fill"></i></a></li> -->
+                    <li><a href="https://www.twitter.com/" target="_blank"><i class="ri-twitter-fill"></i></a></li>
+                </ul>
+            </div>
+            <div class="others-option d-flex d-lg-none align-items-center">
+                <div class="option-item">
+                    <a href="http://localhost/baxo/login.html" class="btn-two">Sign In</a>
+                </div>
+            </div>
+        </b></b></div><b><b>
+
+    </b></b></div><b><b>
+
+    <div class="modal fade searchModal" id="searchModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <input type="text" class="form-control" placeholder="Search here....">
+                    <button type="submit"><i class="fi fi-rr-search"></i></button>
+                </form>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="ri-close-line"></i></button>
+            </div>
+        </div>
+    </div>    <!-- common header end  -->
+
+    <div class="container-fluid">
+        <div class="trending-news-box">
+            <div class="row gx-5">
+                <div class="col-xxl-2 col-xl-3 col-lg-3 col-md-4">
+                    <h4>Breaking News</h4>
+                    <div class="trending-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-61031f9331e4910b74"><i class="flaticon-left-arrow"></i></div>
+                    <div class="trending-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-61031f9331e4910b74"><i class="flaticon-right-arrow"></i></div>
+                </div>
+                <div class="col-xxl-10 col-xl-9 col-lg-9 col-md-8">
+                    <div class="trending-news-slider swiper swiper-initialized swiper-horizontal swiper-autoheight swiper-backface-hidden">
+                        <div class="swiper-wrapper" style="cursor: grab; height: 129px;" id="swiper-wrapper-61031f9331e4910b74" aria-live="polite">
+                            
+                            
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                                                                           
+                        <div class="swiper-slide news-card-one swiper-slide-active" role="group" aria-label="1 / 9" style="width: 366.818px; margin-right: 25px;" data-swiper-slide-index="0">
+                                            <div class="news-card-img">
+                                                <img src="./Baxo - Responsive Blog HTML Template_files/5M723I.jpg" alt="Image">
+                                            </div>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/details-MzMyMQ==">जुलाई के मध्य से देहरादून और पिथौरागढ़ के बीच विमान सेवा हो सकती है शुरू.</a></h3>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-clock-three"></i>29 Jun 2023</li>
+                                                </ul>
+                                            </div>
+                                        </div><div class="swiper-slide news-card-one swiper-slide-next" role="group" aria-label="2 / 9" style="width: 366.818px; margin-right: 25px;" data-swiper-slide-index="1">
+                                            <div class="news-card-img">
+                                                <img src="./Baxo - Responsive Blog HTML Template_files/4N8T81.jpg" alt="Image">
+                                            </div>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/details-MzMzMw==">फिल्म ‘द क्रू’ अगले साल 22 मार्च को होगी रिलीज.</a></h3>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-clock-three"></i>06 Jul 2023</li>
+                                                </ul>
+                                            </div>
+                                        </div><div class="swiper-slide news-card-one" role="group" aria-label="3 / 9" style="width: 366.818px; margin-right: 25px;" data-swiper-slide-index="2">
+                                            <div class="news-card-img">
+                                                <img src="./Baxo - Responsive Blog HTML Template_files/4M3N22.jpg" alt="Image">
+                                            </div>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/details-MzMzMg==">रजनीकांत की फिल्म 'जेलर'  का एक नया पोस्टर जारी.</a></h3>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-clock-three"></i>06 Jul 2023</li>
+                                                </ul>
+                                            </div>
+                                        </div><div class="swiper-slide news-card-one" role="group" aria-label="4 / 9" style="width: 366.818px; margin-right: 25px;" data-swiper-slide-index="3">
+                                            <div class="news-card-img">
+                                                <img src="./Baxo - Responsive Blog HTML Template_files/T1262S.jpg" alt="Image">
+                                            </div>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/details-MzMxOQ==">उत्तराखंड में स्कूली छात्रों के लिए  फ्री में मिलेगी JEE और NEET की कोचिंग.</a></h3>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-clock-three"></i>29 Jun 2023</li>
+                                                </ul>
+                                            </div>
+                                        </div><div class="swiper-slide news-card-one" role="group" aria-label="5 / 9" style="width: 366.818px; margin-right: 25px;" data-swiper-slide-index="4">
+                                            <div class="news-card-img">
+                                                <img src="./Baxo - Responsive Blog HTML Template_files/R93012.jpg" alt="Image">
+                                            </div>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/details-MzMxOA==">ग्लेशियर की जड़ में बनी झीलों को वक्त रहते किया जाएगा पंक्चर.</a></h3>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-clock-three"></i>29 Jun 2023</li>
+                                                </ul>
+                                            </div>
+                                        </div><div class="swiper-slide news-card-one" role="group" aria-label="6 / 9" style="width: 366.818px; margin-right: 25px;" data-swiper-slide-index="5">
+                                            <div class="news-card-img">
+                                                <img src="./Baxo - Responsive Blog HTML Template_files/R99RU0.jpg" alt="Image">
+                                            </div>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/details-MzMyMg==">ऋषिकेश से कर्णप्रयाग सिर्फ 4 घंटे का सफर.</a></h3>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-clock-three"></i>29 Jun 2023</li>
+                                                </ul>
+                                            </div>
+                                        </div><div class="swiper-slide news-card-one" role="group" aria-label="7 / 9" style="width: 366.818px; margin-right: 25px;" data-swiper-slide-index="6">
+                                            <div class="news-card-img">
+                                                <img src="./Baxo - Responsive Blog HTML Template_files/9F337J.jpg" alt="Image">
+                                            </div>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/details-MzMzMA==">मुख्यमंत्री पुष्कर सिंह धामी ने डॉ. श्यामा प्रसाद मुखर्जी की जयंती पर श्रद्धांजलि अर्पित की.</a></h3>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-clock-three"></i>06 Jul 2023</li>
+                                                </ul>
+                                            </div>
+                                        </div><div class="swiper-slide news-card-one" role="group" aria-label="8 / 9" style="width: 366.818px; margin-right: 25px;" data-swiper-slide-index="7">
+                                            <div class="news-card-img">
+                                                <img src="./Baxo - Responsive Blog HTML Template_files/2941AJ.jpg" alt="Image">
+                                            </div>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/details-MzMzMQ==">भारतीय जनता पार्टी प्रेमनगर कांवली मंडल अध्यक्ष अंजू बिष्ट को जन्मदिवस पर दी बधाई.</a></h3>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-clock-three"></i>06 Jul 2023</li>
+                                                </ul>
+                                            </div>
+                                        </div><div class="swiper-slide news-card-one" role="group" aria-label="9 / 9" style="width: 366.818px; margin-right: 25px;" data-swiper-slide-index="8">
+                                            <div class="news-card-img">
+                                                <img src="./Baxo - Responsive Blog HTML Template_files/NK2ZY7.jpg" alt="Image">
+                                            </div>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/details-MzMyMA==">बदरीनाथ में नहीं पढ़ी जाएगी ईद की नमाज.</a></h3>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-clock-three"></i>29 Jun 2023</li>
+                                                </ul>
+                                            </div>
+                                        </div></div>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid pb-75">
+        <div class="news-col-wrap">
+
+            <div class="news-col-one">
+                
+                <div class="news-card-two">
+                <div class="news-card-img">
+                    <img src="./Baxo - Responsive Blog HTML Template_files/2941AJ.jpg" alt="Image">
+                    <a href="http://localhost/baxo/section-Ng==" class="news-cat">देहरादून</a>
+                </div>
+                <div class="news-card-info">
+                    <h3><a href="http://localhost/baxo/details-MzMzMQ==">भारतीय जनता पार्टी प्रेमनगर कांवली मंडल अध्यक्ष अंजू बिष्ट को जन्मदिवस पर दी बधाई.</a></h3>
+                    <ul class="news-metainfo list-style">
+                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-07-06</a></li>
+                    </ul>
+                </div>
+                </div>
+                
+                                <div class="news-card-three">
+                    <div class="news-card-img">
+                        <img src="./Baxo - Responsive Blog HTML Template_files/R99RU0.jpg" alt="Image">
+                    </div>
+                    <div class="news-card-info">
+                        <a href="http://localhost/baxo/section-MQ==" class="news-cat">उत्तराखण्ड</a>
+                        <h3><a href="http://localhost/baxo/details-MzMyMg==">ऋषिकेश से कर्णप्रयाग सिर्फ 4 घंटे का सफर.</a>
+                        </h3>
+                        <ul class="news-metainfo list-style">
+                            <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">29 Jun 2023</a></li>
+                        </ul>
+                    </div>
+                </div>
+                                         <div class="news-card-three">
+                    <div class="news-card-img">
+                        <img src="./Baxo - Responsive Blog HTML Template_files/5M723I.jpg" alt="Image">
+                    </div>
+                    <div class="news-card-info">
+                        <a href="http://localhost/baxo/section-MQ==" class="news-cat">उत्तराखण्ड</a>
+                        <h3><a href="http://localhost/baxo/details-MzMyMQ==">जुलाई के मध्य से देहरादून और पिथौरागढ़ के बीच विमान सेवा हो सकती है शुरू.</a>
+                        </h3>
+                        <ul class="news-metainfo list-style">
+                            <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">29 Jun 2023</a></li>
+                        </ul>
+                    </div>
+                </div>
+                                         <div class="news-card-three">
+                    <div class="news-card-img">
+                        <img src="./Baxo - Responsive Blog HTML Template_files/NK2ZY7.jpg" alt="Image">
+                    </div>
+                    <div class="news-card-info">
+                        <a href="http://localhost/baxo/section-MQ==" class="news-cat">उत्तराखण्ड</a>
+                        <h3><a href="http://localhost/baxo/details-MzMyMA==">बदरीनाथ में नहीं पढ़ी जाएगी ईद की नमाज.</a>
+                        </h3>
+                        <ul class="news-metainfo list-style">
+                            <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">29 Jun 2023</a></li>
+                        </ul>
+                    </div>
+                </div>
+                           
+                        
+            </div>
+
+            <div class="news-col-two">
+
+                <div class="news-card-four">
+                                        <img src="./Baxo - Responsive Blog HTML Template_files/03V5Z6.jpg" alt="Image">
+                    <div class="news-card-info">
+                        <h3 style="font-size: 19px;"><a href="http://localhost/baxo/details-MzMxNQ==">सीएम धामी के निर्देश पर पूरे प्रदेश में विद्युत समस्या समाधान शिविर किए जा रहे आयोजित .</a></h3>
+                        <ul class="news-metainfo list-style">
+                            <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php">2023-01-24</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="news-card-five">
+                                        <div class="news-card-img">
+                        <img src="./Baxo - Responsive Blog HTML Template_files/T1262S.jpg" alt="Image" class="small-img-cards-2col">
+                        <a href="http://localhost/baxo/section-MQ==" class="news-cat">उत्तराखण्ड</a>
+                    </div>
+                    <div class="news-card-info">
+                        <h3><a href="http://localhost/baxo/details-MzMxOQ==">उत्तराखंड में स्कूली छात्रों के लिए  फ्री में मिलेगी JEE और NEET की कोचिंग.</a></h3>
+                        <p>सरकारी स्कूल के छात्रों को जेईई और नीट की कोचिंग दी जाएगी, वो भी बिल्कुल मुफ्त। शुरुआत में यह .......</p>
+                        <ul class="news-metainfo list-style">
+                            <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-06-29</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="news-card-five">
+                                        <div class="news-card-img">
+                        <img src="./Baxo - Responsive Blog HTML Template_files/5CAA04.jpg" alt="Image" class="small-img-cards-2col">
+                        <a href="http://localhost/baxo/section-MTU=" class="news-cat">उत्तरप्रदेश</a>
+                    </div>
+                    <div class="news-card-info">
+                        <h3><a href="http://localhost/baxo/details-MzI4NQ==">कुश्‍ती संघ के अध्‍यक्ष बृजभूषण सिंह के समर्थन में उतरी अर्जुन अवार्डी पहलवान दिव्या ...</a></h3>
+                        <p>मुजफ्फरनगर,खबर न्यू इंडिया (न्यूज़ डेस्क):&nbsp; भारतीय कुश्‍ती संघ के अध्‍यक्ष बृजभूषण सिंह के खिलाफ पहलवानों का जंतर-मंतर पर धरना गुरुवार .......</p>
+                        <ul class="news-metainfo list-style">
+                            <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-01-20</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="news-col-three">
+
+                
+                <div class="news-card-two">
+                <div class="news-card-img">
+                    <img src="./Baxo - Responsive Blog HTML Template_files/9F337J.jpg" alt="Image">
+                    <a href="http://localhost/baxo/section-Ng==" class="news-cat">देहरादून</a>
+                </div>
+                <div class="news-card-info">
+                    <h3><a href="http://localhost/baxo/details-MzMzMA==">मुख्यमंत्री पुष्कर सिंह धामी ने डॉ. श्यामा प्रसाद मुखर्जी की जयंती पर श्रद्धांजलि अर्पित की.</a></h3>
+                    <ul class="news-metainfo list-style">
+                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-07-06</a></li>
+                    </ul>
+                </div>
+                </div>
+                
+                                <div class="news-card-three">
+                    <div class="news-card-img">
+                        <img src="./Baxo - Responsive Blog HTML Template_files/H73134.jpg" alt="Image" class="small-img-cards-3col">
+                    </div>
+                    <div class="news-card-info">
+                        <a href="http://localhost/baxo/section-MTU=" class="news-cat">उत्तरप्रदेश</a>
+                        <h3><a href="http://localhost/baxo/details-MzMxNg==">Rakesh Tikait: जब तक हमें न्यूनतम समर्थन मूल्य की गारंटी नहीं ...</a></h3>
+                        <ul class="news-metainfo list-style">
+                            <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">24 Jan 2023</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                                <div class="news-card-three">
+                    <div class="news-card-img">
+                        <img src="./Baxo - Responsive Blog HTML Template_files/JSN6QK.jpg" alt="Image" class="small-img-cards-3col">
+                    </div>
+                    <div class="news-card-info">
+                        <a href="http://localhost/baxo/section-MTU=" class="news-cat">उत्तरप्रदेश</a>
+                        <h3><a href="http://localhost/baxo/details-MzMwNw==">सपा नेता स्वामी प्रसाद मौर्य का विवादित बयान, रामचरितमानस को बताया ...</a></h3>
+                        <ul class="news-metainfo list-style">
+                            <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">23 Jan 2023</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                                <div class="news-card-three">
+                    <div class="news-card-img">
+                        <img src="./Baxo - Responsive Blog HTML Template_files/3B28IF.jpg" alt="Image" class="small-img-cards-3col">
+                    </div>
+                    <div class="news-card-info">
+                        <a href="http://localhost/baxo/section-MTU=" class="news-cat">उत्तरप्रदेश</a>
+                        <h3><a href="http://localhost/baxo/details-MzI5NQ==">अयोध्या राम मंदिर की तरह काशी और मथुरा में भी बने ...</a></h3>
+                        <ul class="news-metainfo list-style">
+                            <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">21 Jan 2023</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                                
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="bg_gray editor-news pb-70">
+        <div class="container-fluid">
+            <div class="row gx-5">
+                <div class="col-xl-6">
+                    <div class="editor-box">
+                        <div class="row align-items-end mb-40">
+                            <!-- <div class="col-xl-6 col-md-6">
+                                <h2 class="section-title">Editor's Pick<img class="section-title-img"
+                                        src="assets/img/section-img.webp" alt="Image"></h2>
+                            </div> -->
+                            <div class="col-xl-12 col-md-12">
+                                <ul class="nav nav-tabs news-tablist-two row" role="tablist">
+                                    <li class="nav-item col d-flex justify-content-center px-0" role="presentation">
+                                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab_1" type="button" role="tab" aria-selected="true"><span class="text-center">उत्तराखण्ड</span></button>
+                                    </li>
+                                    <li class="nav-item col d-flex justify-content-center px-0" role="presentation">
+                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab_2" type="button" role="tab" aria-selected="false" tabindex="-1"><span class="text-center">देश</span></button>
+                                    </li>
+                                    <li class="nav-item col d-flex justify-content-center px-0" role="presentation">
+                                        <button class="nav-link " data-bs-toggle="tab" data-bs-target="#tab_3" type="button" role="tab" aria-selected="false" tabindex="-1"><span class="text-center">विदेश</span></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-content editor-news-content">
+                            
+                            <div class="tab-pane fade show active" id="tab_1" role="tabpanel">
+                                <div class="row">
+                                    
+                                                                            <div class="col-md-6">
+                                            <div class="news-card-six">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/R99RU0.jpg" alt="Image">
+                                                    <a href="http://localhost/baxo/section-MQ==" class="news-cat">उत्तराखण्ड</a>
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <div class="news-author">
+                                                        <h5>By <a href="http://localhost/baxo/index.php#">yuvraj</a></h5>
+                                                    </div>
+                                                    <h3><a href="http://localhost/baxo/business-details.html">ऋषिकेश से कर्णप्रयाग सिर्फ 4 घंटे का सफर.</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">29 Jun 2023</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            </div>
+                                                                                    <div class="col-md-6">
+                                            <div class="news-card-six">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/5M723I.jpg" alt="Image">
+                                                    <a href="http://localhost/baxo/section-MQ==" class="news-cat">उत्तराखण्ड</a>
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <div class="news-author">
+                                                        <h5>By <a href="http://localhost/baxo/index.php#">yuvraj</a></h5>
+                                                    </div>
+                                                    <h3><a href="http://localhost/baxo/business-details.html">जुलाई के मध्य से देहरादून और पिथौरागढ़ के बीच विमान सेवा हो सकती है शुरू.</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">29 Jun 2023</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            </div>
+                                                                                    <div class="col-md-6">
+                                            <div class="news-card-six">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/NK2ZY7.jpg" alt="Image">
+                                                    <a href="http://localhost/baxo/section-MQ==" class="news-cat">उत्तराखण्ड</a>
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <div class="news-author">
+                                                        <h5>By <a href="http://localhost/baxo/index.php#">yuvraj</a></h5>
+                                                    </div>
+                                                    <h3><a href="http://localhost/baxo/business-details.html">बदरीनाथ में नहीं पढ़ी जाएगी ईद की नमाज.</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">29 Jun 2023</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            </div>
+                                                                                    <div class="col-md-6">
+                                            <div class="news-card-six">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/T1262S.jpg" alt="Image">
+                                                    <a href="http://localhost/baxo/section-MQ==" class="news-cat">उत्तराखण्ड</a>
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <div class="news-author">
+                                                        <h5>By <a href="http://localhost/baxo/index.php#">yuvraj</a></h5>
+                                                    </div>
+                                                    <h3><a href="http://localhost/baxo/business-details.html">उत्तराखंड में स्कूली छात्रों के लिए  फ्री में मिलेगी JEE और NEET की कोचिंग.</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">29 Jun 2023</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="tab_2" role="tabpanel">
+                                <div class="row">
+
+                                                                            <div class="col-md-6">
+                                            <div class="news-card-six">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/H73134.jpg" alt="Image">
+                                                    <a href="http://localhost/baxo/section-MTc=" class="news-cat">देश</a>
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <div class="news-author">
+                                                        <h5>By <a href="http://localhost/baxo/index.php#">Rahul Kumar </a></h5>
+                                                    </div>
+                                                    <h3><a href="http://localhost/baxo/business-details.html">Rakesh Tikait: जब तक हमें न्यूनतम समर्थन मूल्य की गारंटी नहीं मिल जाती है, ...</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">24 Jan 2023</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            </div>
+                                                                                    <div class="col-md-6">
+                                            <div class="news-card-six">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/JSN6QK.jpg" alt="Image">
+                                                    <a href="http://localhost/baxo/section-MTc=" class="news-cat">देश</a>
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <div class="news-author">
+                                                        <h5>By <a href="http://localhost/baxo/index.php#">Rahul Kumar </a></h5>
+                                                    </div>
+                                                    <h3><a href="http://localhost/baxo/business-details.html">सपा नेता स्वामी प्रसाद मौर्य का विवादित बयान, रामचरितमानस को बताया बकवास, किताब पर ...</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">23 Jan 2023</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            </div>
+                                                                                    <div class="col-md-6">
+                                            <div class="news-card-six">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/5I5572.jpg" alt="Image">
+                                                    <a href="http://localhost/baxo/section-MTc=" class="news-cat">देश</a>
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <div class="news-author">
+                                                        <h5>By <a href="http://localhost/baxo/index.php#">Rahul Kumar </a></h5>
+                                                    </div>
+                                                    <h3><a href="http://localhost/baxo/business-details.html">सीएम धामी राजस्थान के भीनमाल में नीलकंठ महादेव मंदिर में चल रहे प्राण प्रतिष्ठा ...</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">23 Jan 2023</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            </div>
+                                                                                    <div class="col-md-6">
+                                            <div class="news-card-six">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/8940U5.jpg" alt="Image">
+                                                    <a href="http://localhost/baxo/section-MTc=" class="news-cat">देश</a>
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <div class="news-author">
+                                                        <h5>By <a href="http://localhost/baxo/index.php#">Rahul Kumar </a></h5>
+                                                    </div>
+                                                    <h3><a href="http://localhost/baxo/business-details.html">कर्तव्य पथ पर इस बार उत्तराखण्ड की झांकी “मानसखण्ड” सबके लिये रहेगी आकर्षण का ...</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">23 Jan 2023</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            </div>
+                                         
+
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane fade" id="tab_3" role="tabpanel">
+                                <div class="row">
+
+                                                                            <div class="col-md-6">
+                                            <div class="news-card-six">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/T05U51.jpg" alt="Image">
+                                                    <a href="http://localhost/baxo/section-MTAz" class="news-cat">विदेश</a>
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <div class="news-author">
+                                                        <h5>By <a href="http://localhost/baxo/index.php#">Rahul Kumar </a></h5>
+                                                    </div>
+                                                    <h3><a href="http://localhost/baxo/business-details.html"> Donald Trump's: अमेरिका के पूर्व राष्ट्रपति डोनाल्ड ट्रंप की कंपनी पर लगा जुर्माना, ...</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">14 Jan 2023</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            </div>
+                                                                                    <div class="col-md-6">
+                                            <div class="news-card-six">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/AXK38R.jpg" alt="Image">
+                                                    <a href="http://localhost/baxo/section-MTAz" class="news-cat">विदेश</a>
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <div class="news-author">
+                                                        <h5>By <a href="http://localhost/baxo/index.php#">Rahul Kumar </a></h5>
+                                                    </div>
+                                                    <h3><a href="http://localhost/baxo/business-details.html">तालिबान ने  पाक को दी चेतावनी, याद दिलाई 1971 में भारत से मिली ...</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">05 Jan 2023</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            </div>
+                                                                                    <div class="col-md-6">
+                                            <div class="news-card-six">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/8NG527.jpg" alt="Image">
+                                                    <a href="http://localhost/baxo/section-MTAz" class="news-cat">विदेश</a>
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <div class="news-author">
+                                                        <h5>By <a href="http://localhost/baxo/index.php#">Rahul Kumar </a></h5>
+                                                    </div>
+                                                    <h3><a href="http://localhost/baxo/business-details.html">Corona in China: चीन के यात्रियों को एक दर्जन से अधिक देशों की तरफ ...</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">02 Jan 2023</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            </div>
+                                                                                    <div class="col-md-6">
+                                            <div class="news-card-six">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/5931XK.jpg" alt="Image">
+                                                    <a href="http://localhost/baxo/section-MTAz" class="news-cat">विदेश</a>
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <div class="news-author">
+                                                        <h5>By <a href="http://localhost/baxo/index.php#">Rahul Kumar </a></h5>
+                                                    </div>
+                                                    <h3><a href="http://localhost/baxo/business-details.html">FIFA World Cup: अर्जेंटीना फ्रांस को हराकर बना फीफा विश्व कप 2022 का चैंपियन.</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">19 Dec 2022</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            </div>
+                                         
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="pp-news-box">
+                        <ul class="nav nav-tabs news-tablist-two" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab_10" type="button" role="tab" aria-selected="true">Popular News</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab_11" type="button" role="tab" aria-selected="false" tabindex="-1">Recent News</button>
+                            </li>
+                            
+                        </ul>
+                        <div class="tab-content news-tab-content">
+
+                            <div class="tab-pane fade show active" id="tab_10" role="tabpanel">
+                             
+                                                                            <div class="news-card-seven">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/5M723I.jpg" alt="Image">
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <!-- <a href="business.html" class="news-cat">Lifestyle</a> -->
+                                                    <h3><a href="http://localhost/baxo/details-MzMyMQ==">जुलाई के मध्य से देहरादून और पिथौरागढ़ के बीच विमान सेवा हो सकती है शुरू.</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">29 Jun 2023</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                                                                    <div class="news-card-seven">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/4N8T81.jpg" alt="Image">
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <!-- <a href="business.html" class="news-cat">Lifestyle</a> -->
+                                                    <h3><a href="http://localhost/baxo/details-MzMzMw==">फिल्म ‘द क्रू’ अगले साल 22 मार्च को होगी रिलीज.</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">06 Jul 2023</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                                                                    <div class="news-card-seven">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/4M3N22.jpg" alt="Image">
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <!-- <a href="business.html" class="news-cat">Lifestyle</a> -->
+                                                    <h3><a href="http://localhost/baxo/details-MzMzMg==">रजनीकांत की फिल्म 'जेलर'  का एक नया पोस्टर जारी.</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">06 Jul 2023</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                                                                    <div class="news-card-seven">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/T1262S.jpg" alt="Image">
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <!-- <a href="business.html" class="news-cat">Lifestyle</a> -->
+                                                    <h3><a href="http://localhost/baxo/details-MzMxOQ==">उत्तराखंड में स्कूली छात्रों के लिए  फ्री में मिलेगी JEE और NEET की कोचिंग.</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">29 Jun 2023</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                                                                                      
+                            </div>
+
+                            <div class="tab-pane fade" id="tab_11" role="tabpanel">
+
+                                                                            <div class="news-card-seven">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/4N8T81.jpg" alt="Image">
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <!-- <a href="business.html" class="news-cat">Lifestyle</a> -->
+                                                    <h3><a href="http://localhost/baxo/details-MzMzMw==">फिल्म ‘द क्रू’ अगले साल 22 मार्च को होगी रिलीज.</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">06 Jul 2023</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                                                                    <div class="news-card-seven">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/4M3N22.jpg" alt="Image">
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <!-- <a href="business.html" class="news-cat">Lifestyle</a> -->
+                                                    <h3><a href="http://localhost/baxo/details-MzMzMg==">रजनीकांत की फिल्म 'जेलर'  का एक नया पोस्टर जारी.</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">06 Jul 2023</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                                                                    <div class="news-card-seven">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/2941AJ.jpg" alt="Image">
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <!-- <a href="business.html" class="news-cat">Lifestyle</a> -->
+                                                    <h3><a href="http://localhost/baxo/details-MzMzMQ==">भारतीय जनता पार्टी प्रेमनगर कांवली मंडल अध्यक्ष अंजू बिष्ट को जन्मदिवस पर दी बधाई.</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">06 Jul 2023</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                                                                    <div class="news-card-seven">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/9F337J.jpg" alt="Image">
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <!-- <a href="business.html" class="news-cat">Lifestyle</a> -->
+                                                    <h3><a href="http://localhost/baxo/details-MzMzMA==">मुख्यमंत्री पुष्कर सिंह धामी ने डॉ. श्यामा प्रसाद मुखर्जी की जयंती पर श्रद्धांजलि अर्पित की.</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">06 Jul 2023</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                                                        
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="selected-news ptb-100">
+        <div class="container-fluid">
+            <div class="content-wrapper">
+                <div class="left-content">
+                    <div class="row align-items-end mb-40">
+                        <div class="col-md-7">
+                            <h2 class="section-title">Selected Posts<img class="section-title-img"
+                                    src="assets/img/section-img.webp" alt="Image"></h2>
+                        </div>
+                        <div class="col-md-5 text-md-end">
+                            <a href="business.html" class="link-one">View All News<i
+                                    class="flaticon-right-arrow"></i></a>
+                        </div>
+                    </div>
+                    <div class="row gx-45">
+                        <div class="col-xl-7">
+                            <div class="news-card-four">
+                                <img src="assets/img/news/news-31.webp" alt="Image">
+                                <div class="news-card-info">
+                                    <h3><a href="business-details.html">Kyrgios And Djokovic Agree To Post-match
+                                            Meal</a></h3>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="#">Apr 25,
+                                                2023</a></li>
+                                        <li><i class="fi fi-rr-clock-three"></i>15 Min Read</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="news-card-five">
+                                <div class="news-card-img">
+                                    <img src="assets/img/news/news-32.webp" alt="Image">
+                                    <a href="business.html" class="news-cat">Sports</a>
+                                </div>
+                                <div class="news-card-info">
+                                    <h3><a href="business-details.html">Muga Nemo Aptent Quaerat Explicabo Urna Ni Like
+                                            Ange</a></h3>
+                                    <p>Lorem ipsum or lipsum as it is sometmes known is dum text used in laying print,
+                                        graphic or web desi…</p>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="#">Feb 03,
+                                                2023</a></li>
+                                        <li><i class="fi fi-rr-clock-three"></i>15 Min Read</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="news-card-five">
+                                <div class="news-card-img">
+                                    <img src="assets/img/news/news-33.webp" alt="Image">
+                                    <a href="business.html" class="news-cat">Fashion</a>
+                                </div>
+                                <div class="news-card-info">
+                                    <h3><a href="business-details.html">Selective Focus Photography Of Orange Fox
+                                            Life</a></h3>
+                                    <p>Lorem ipsum or lipsum as it is sometmes known is dum text used in laying print,
+                                        graphic or web desi…</p>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="#">Apr 03,
+                                                2023</a></li>
+                                        <li><i class="fi fi-rr-clock-three"></i>15 Min Read</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5">
+                            <div class="news-card-two">
+                                <div class="news-card-img">
+                                    <img src="assets/img/news/news-34.webp" alt="Image">
+                                    <a href="business.html" class="news-cat">Politics</a>
+                                </div>
+                                <div class="news-card-info">
+                                    <h3><a href="business-details.html">Beyond Good & Evil 2 Has Been In Development
+                                            Longer Than Literally Any Game, Ever</a></h3>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="#">Apr 15,
+                                                2023</a></li>
+                                        <li><i class="fi fi-rr-clock-three"></i>15 Min Read</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="news-card-three">
+                                <div class="news-card-img">
+                                    <img src="assets/img/news/news-35.webp" alt="Image">
+                                </div>
+                                <div class="news-card-info">
+                                    <a href="business.html" class="news-cat">Travel</a>
+                                    <h3><a href="business-details.html">World Trending Best 10 Website Travel Tips For
+                                            Runners Groups Of</a></h3>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="#">Apr 22,
+                                                2023</a></li>
+                                        <li><i class="fi fi-rr-clock-three"></i>15 Min Read</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="news-card-three">
+                                <div class="news-card-img">
+                                    <img src="assets/img/news/news-36.webp" alt="Image">
+                                </div>
+                                <div class="news-card-info">
+                                    <a href="business.html" class="news-cat">Business</a>
+                                    <h3><a href="business-details.html">How To Find The Right Template For Your Specific
+                                            Product</a></h3>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="#">Apr 15,
+                                                2023</a></li>
+                                        <li><i class="fi fi-rr-clock-three"></i>15 Min Read</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="news-card-three">
+                                <div class="news-card-img">
+                                    <img src="assets/img/news/news-37.webp" alt="Image">
+                                </div>
+                                <div class="news-card-info">
+                                    <a href="business.html" class="news-cat">Health</a>
+                                    <h3><a href="business-details.html">Life Health Continues To Spread Rapidly, Are
+                                            Many People</a></h3>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="#">Apr 16,
+                                                2023</a></li>
+                                        <li><i class="fi fi-rr-clock-three"></i>15 Min Read</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="promo-wrap">
+                                <div class="promo-card bg-f">
+                                    <img src="assets/img/promo-shape-2.webp" alt="Image" class="promo-shape">
+                                    <div class="promo-content">
+                                        <a href="index.php" class="logo"><img src="assets/img/logo-white.webp"
+                                                alt="Image"></a>
+                                        <p>The European languages are members of the same family.</p>
+                                    </div>
+                                    <div class="promo-img">
+                                        <img src="assets/img/promo-img.webp" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="sidebar-widget">
+                        <h3 class="sidebar-widget-title">Social Links</h3>
+                        <ul class="social-widget list-style">
+                            <li>
+                                <a href="https://www.fb.com/" target="_blank">
+                                    <span><img src="assets/img/icons/facebook.svg" alt="Image"></span>
+                                    Facebook
+                                </a>
+                                <p>28 <br> Likes</p>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com/" target="_blank">
+                                    <span><img src="assets/img/icons/twitter.svg" alt="Image"></span>
+                                    Twitter
+                                </a>
+                                <p>289k Followers</p>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <span><img src="assets/img/icons/instagram.svg" alt="Image"></span>
+                                    Instagram
+                                </a>
+                                <p>231k Followers</p>
+                            </li>
+                            <li>
+                                <a href="https://www.pinterest.com/" target="_blank">
+                                    <span><img src="assets/img/icons/pinterest.svg" alt="Image"></span>
+                                    Pinterest
+                                </a>
+                                <p>28k Followers</p>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/" target="_blank">
+                                    <span><img src="assets/img/icons/youtube.svg" alt="Image"></span>
+                                    Youtube
+                                </a>
+                                <p>159k Subscribers</p>
+                            </li>
+                            <li>
+                                <a href="https://www.soundcloud.com/" target="_blank">
+                                    <span><img src="assets/img/icons/soundcloud.svg" alt="Image"></span>
+                                    Soundcloud
+                                </a>
+                                <p>31k Followers</p>
+                            </li>
+                            <li>
+                                <a href="https://www.behance.com/" target="_blank">
+                                    <span><img src="assets/img/icons/behance.svg" alt="Image"></span>
+                                    Behance
+                                </a>
+                                <p>28 Followers</p>
+                            </li>
+                            <li>
+                                <a href="https://www.vimeo.com/" target="_blank">
+                                    <span><img src="assets/img/icons/vimeo.svg" alt="Image"></span>
+                                    Vimeo
+                                </a>
+                                <p>55k Followers</p>
+                            </li>
+                            <li>
+                                <a href="https://www.telegram.com/" target="_blank">
+                                    <span><img src="assets/img/icons/telegram.svg" alt="Image"></span>
+                                    Telegram
+                                </a>
+                                <p>788k Followers</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-widget">
+                        <div class="newsletter-widget">
+                            <h2>Newsletter</h2>
+                            <h6>Join 70,000 Subscribers</h6>
+                            <form action="#">
+                                <input type="email" placeholder="Email Address">
+                                <button type="submit">Subscribe<i class="flaticon-right-arrow-1"></i></button>
+                            </form>
+                            <p>By signing up, you agree to our <a href="privacy-policy.html">Privacy Policy</a></p>
+                        </div>
+                    </div>
+                    <div class="sidebar-widget">
+                        <h3 class="sidebar-widget-title">Popular Tags</h3>
+                        <ul class="tag-list list-style">
+                            <li><a href="news-by-tags.html">BUSINESS</a></li>
+                            <li><a href="news-by-tags.html">FOOD</a></li>
+                            <li><a href="news-by-tags.html">SCIENCE</a></li>
+                            <li><a href="news-by-tags.html">LIFESTYLE</a></li>
+                            <li><a href="news-by-tags.html">SPORTS</a></li>
+                            <li><a href="news-by-tags.html">PHOTO</a></li>
+                            <li><a href="news-by-tags.html">TECHNOLOGY</a></li>
+                            <li><a href="news-by-tags.html">CONTENT</a></li>
+                            <li><a href="news-by-tags.html">FEATURED</a></li>
+                            <li><a href="news-by-tags.html">AUDIO</a></li>
+                            <li><a href="news-by-tags.html">FASHION</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="bg_gray popular-news pt-0 pb-100">
+        <div class="container-fluid">
+            <div class="row align-items-end mb-40">
+                <div class="col-md-7">
+                    <h2 class="section-title">Most Popular<img class="section-title-img" src="./Baxo - Responsive Blog HTML Template_files/section-img.webp" alt="Image"></h2>
+                </div>                
+            </div>
+            <div class="row gx-55">
+
+                <div class="col-xl-6">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="news-card-eleven">
+                                <div class="news-card-img">
+                                    <img src="./Baxo - Responsive Blog HTML Template_files/5M723I.jpg" alt="Image">
+                                </div>
+                                <div class="news-card-info">
+                                    <div class="news-author">
+                                        
+                                        <h5>By <a href="http://localhost/baxo/index.php#">yuvraj</a></h5>
+                                    </div>
+                                    <h3><a href="http://localhost/baxo/details-MzMyMQ==">जुलाई के मध्य से देहरादून और पिथौरागढ़ के बीच विमान सेवा हो सकती है शुरू.</a></h3>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-06-29</a></li>
+                                    </ul>
+                                </div>
+                                <p>जुलाई के मध्य तक उत्तराखंड में पिथौरागढ़ हवाई पट्टी से हवाई सेवा एक बार फिर से शुरू हो सकती है। जी हां, इस बार पूरी प्लानिंग और प्लॉटिंग के साथ में केंद्र सरकार ने पिथौरागढ़ से वाया पंतनगर देहरादून के बीच सेवा के लिए फ्लाईबिग एविएशन का चयन किया है और यह कंपनी छोटे ...  
+                            </p></div>
+                        </div>
+                        
+                        <!-- <div class="col-md-12">
+                            <div class="news-card-ten">
+                            
+                                
+                            </div>
+                        </div> -->
+                        
+
+                    </div>
+                </div>
+
+                <div class="col-xl-6">
+                    <div class="row">
+                        
+                        
+                                <div class="col-md-6">
+                                    <div class="news-card-six">
+                                        <div class="news-card-img">
+                                            <img src="./Baxo - Responsive Blog HTML Template_files/T1262S.jpg" alt="Image">                                          
+                                        </div>
+                                        <div class="news-card-info">
+                                            <div class="news-author">                                          
+                                                <h5>By <a href="http://localhost/baxo/index.php#">yuvraj</a></h5>
+                                            </div>
+                                            <h3><a href="http://localhost/baxo/details-MzMxOQ==">उत्तराखंड में स्कूली छात्रों के लिए  फ्री में मिलेगी JEE और NEET की कोचिंग.</a></h3>
+                                            <ul class="news-metainfo list-style">
+                                                <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-06-29</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> 
+
+                            
+                                <div class="col-md-6">
+                                    <div class="news-card-six">
+                                        <div class="news-card-img">
+                                            <img src="./Baxo - Responsive Blog HTML Template_files/R93012.jpg" alt="Image">                                          
+                                        </div>
+                                        <div class="news-card-info">
+                                            <div class="news-author">                                          
+                                                <h5>By <a href="http://localhost/baxo/index.php#">yuvraj</a></h5>
+                                            </div>
+                                            <h3><a href="http://localhost/baxo/details-MzMxOA==">ग्लेशियर की जड़ में बनी झीलों को वक्त रहते किया जाएगा पंक्चर.</a></h3>
+                                            <ul class="news-metainfo list-style">
+                                                <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-06-29</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> 
+
+                            
+                                <div class="col-md-6">
+                                    <div class="news-card-six">
+                                        <div class="news-card-img">
+                                            <img src="./Baxo - Responsive Blog HTML Template_files/R99RU0.jpg" alt="Image">                                          
+                                        </div>
+                                        <div class="news-card-info">
+                                            <div class="news-author">                                          
+                                                <h5>By <a href="http://localhost/baxo/index.php#">yuvraj</a></h5>
+                                            </div>
+                                            <h3><a href="http://localhost/baxo/details-MzMyMg==">ऋषिकेश से कर्णप्रयाग सिर्फ 4 घंटे का सफर.</a></h3>
+                                            <ul class="news-metainfo list-style">
+                                                <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-06-29</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> 
+
+                            
+                                <div class="col-md-6">
+                                    <div class="news-card-six">
+                                        <div class="news-card-img">
+                                            <img src="./Baxo - Responsive Blog HTML Template_files/9F337J.jpg" alt="Image">                                          
+                                        </div>
+                                        <div class="news-card-info">
+                                            <div class="news-author">                                          
+                                                <h5>By <a href="http://localhost/baxo/index.php#">Yuvraj Singh</a></h5>
+                                            </div>
+                                            <h3><a href="http://localhost/baxo/details-MzMzMA==">मुख्यमंत्री पुष्कर सिंह धामी ने डॉ. श्यामा प्रसाद मुखर्जी की जयंती पर श्रद्धांजलि अर्पित की.</a></h3>
+                                            <ul class="news-metainfo list-style">
+                                                <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-07-06</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> 
+
+                                                       
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="general-news ptb-100">
+        <div class="container-fluid">
+            <div class="content-wrapper">
+                <div class="left-content">
+                    <div class="row align-items-end mb-40">
+                        <div class="col-md-7">
+                            <h2 class="section-title">General News<img class="section-title-img"
+                                    src="assets/img/section-img.webp" alt="Image"></h2>
+                        </div>
+                        <div class="col-md-5 text-md-end">
+                            <a href="business.html" class="link-one">View All News<i
+                                    class="flaticon-right-arrow"></i></a>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6">
+                            <div class="news-card-twelve">
+                                <div class="news-card-img">
+                                    <img src="assets/img/news/news-20.webp" alt="Image">
+                                </div>
+                                <div class="news-card-info">
+                                    <a href="business.html" class="news-cat">Fashion</a>
+                                    <h3><a href="business-details.html">Is This The Beginning Of The End Of The
+                                            Internet?</a></h3>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="#">Feb 22,
+                                                2023</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="news-card-twelve">
+                                <div class="news-card-img">
+                                    <img src="assets/img/news/news-21.webp" alt="Image">
+                                </div>
+                                <div class="news-card-info">
+                                    <a href="business.html" class="news-cat">Politics</a>
+                                    <h3><a href="business-details.html">7 Steps To Get Professional Facial Results At
+                                            Home</a></h3>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="#">Feb 25,
+                                                2023</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="news-card-twelve">
+                                <div class="news-card-img">
+                                    <img src="assets/img/news/news-22.webp" alt="Image">
+                                </div>
+                                <div class="news-card-info">
+                                    <a href="business.html" class="news-cat">Inspiration</a>
+                                    <h3><a href="business-details.html">Creative Photography Ideas From Smart
+                                            Devices</a></h3>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="#">Feb 18,
+                                                2023</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="news-card-twelve">
+                                <div class="news-card-img">
+                                    <img src="assets/img/news/news-23.webp" alt="Image">
+                                </div>
+                                <div class="news-card-info">
+                                    <a href="business.html" class="news-cat">Politics</a>
+                                    <h3><a href="business-details.html">6 Romantic Places You Should Visit In 2023</a>
+                                    </h3>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="#">Feb 20,
+                                                2023</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="news-card-twelve">
+                                <div class="news-card-img">
+                                    <img src="assets/img/news/news-24.webp" alt="Image">
+                                </div>
+                                <div class="news-card-info">
+                                    <a href="business.html" class="news-cat">Sports</a>
+                                    <h3><a href="business-details.html">The Best Place To Celebrate Birthday And
+                                            Music</a></h3>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="#">Feb 27,
+                                                2023</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="news-card-twelve">
+                                <div class="news-card-img">
+                                    <img src="assets/img/news/news-25.webp" alt="Image">
+                                </div>
+                                <div class="news-card-info">
+                                    <a href="business.html" class="news-cat">Business</a>
+                                    <h3><a href="business-details.html">Splurge Or Save Last Minute Pampering Gift
+                                            Ideas</a></h3>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="#">Feb 18,
+                                                2023</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad-section">
+                        <p>SPONSORED AD</p>
+                    </div>
+                    <div class="promo-wrap">
+                        <div class="promo-card-two">
+                            <img src="assets/img/promo-shape-1.webp" alt="Image" class="promo-shape">
+                            <div class="promo-content">
+                                <a href="index.php" class="logo">
+                                    <img class="logo-light" src="assets/img/logo.webp" alt="Image">
+                                    <img class="logo-dark" src="assets/img/logo-white.webp" alt="Image">
+                                </a>
+                                <p>The European languages are members of the same family separ existence is a Baxo. For
+                                    science, music, sport, etc.</p>
+                            </div>
+                            <img src="assets/img/promo-img-2.webp" alt="Image" class="promo-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="sidebar-widget-two">
+                        <div class="contact-widget">
+                            <img src="assets/img/contact-bg.svg" alt="Image" class="contact-shape">
+                            <a href="index.php" class="logo">
+                                <img class="logo-light" src="assets/img/logo.webp" alt="Image">
+                                <img class="logo-dark" src="assets/img/logo-white.webp" alt="Image">
+                            </a>
+                            <p>Mauris mattis auctor cursus. Phasellus iso tellus tellus, imperdiet ut imperdiet eu,
+                                noiaculis a sem Donec vehicula luctus nunc in laoreet Aliquam</p>
+                            <ul class="social-profile list-style">
+                                <li><a href="https://www.fb.com/" target="_blank"><i
+                                            class="flaticon-facebook-1"></i></a></li>
+                                <li><a href="https://www.twitter.com/" target="_blank"><i
+                                            class="flaticon-twitter-1"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i
+                                            class="flaticon-instagram-2"></i></a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank"><i
+                                            class="flaticon-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sidebar-widget">
+                        <h3 class="sidebar-widget-title">Popular Posts</h3>
+                        <div class="pp-post-wrap">
+                            <div class="news-card-one">
+                                <div class="news-card-img">
+                                    <img src="assets/img/news/news-thumb-4.webp" alt="Image">
+                                </div>
+                                <div class="news-card-info">
+                                    <h3><a href="business-details.html">Bernie Nonummy Pelopai Iatis Eum Litora</a></h3>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="#">Apr 22,
+                                                2023</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="news-card-one">
+                                <div class="news-card-img">
+                                    <img src="assets/img/news/news-thumb-5.webp" alt="Image">
+                                </div>
+                                <div class="news-card-info">
+                                    <h3><a href="business-details.html">How Youth Viral Diseases May The Year 2023</a>
+                                    </h3>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="#">Apr 23,
+                                                2023</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="news-card-one">
+                                <div class="news-card-img">
+                                    <img src="assets/img/news/news-thumb-6.webp" alt="Image">
+                                </div>
+                                <div class="news-card-info">
+                                    <h3><a href="business-details.html">Man Wearing Black Pullover Hoodie To Smoke</a>
+                                    </h3>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="#">Apr 14,
+                                                2023</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="news-card-one">
+                                <div class="news-card-img">
+                                    <img src="assets/img/news/news-thumb-7.webp" alt="Image">
+                                </div>
+                                <div class="news-card-info">
+                                    <h3><a href="business-details.html">First Prototype Flight Using Kinetic Launch
+                                            System</a></h3>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="#">Apr 07,
+                                                2023</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="news-card-one">
+                                <div class="news-card-img">
+                                    <img src="assets/img/news/news-thumb-8.webp" alt="Image">
+                                </div>
+                                <div class="news-card-info">
+                                    <h3><a href="business-details.html">Beauty Queens Need Material & Products</a></h3>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="#">Apr 03,
+                                                2023</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="news-card-one">
+                                <div class="news-card-img">
+                                    <img src="assets/img/news/news-thumb-9.webp" alt="Image">
+                                </div>
+                                <div class="news-card-info">
+                                    <h3><a href="business-details.html">That Woman Comes From Heaven Look Like Angel</a>
+                                    </h3>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="#">Apr 01,
+                                                2023</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="video-news-wrap pt-100 pb-75">
+        <div class="container-fluid">
+
+            <div class="row mb-50 align-items-center">
+                <div class="col-md-7">
+                    <h2 class="section-title text-white">Video News<img class="section-title-img" src="./Baxo - Responsive Blog HTML Template_files/section-img.webp" alt="Image"></h2>
+                </div>
+                <div class="col-md-5 text-md-end">
+                    <a href="http://localhost/baxo/video-news.php" class="link-one">View All Video News<i class="flaticon-right-arrow"></i></a>
+                </div>
+            </div>
+            <div class="scrollscreen featured-video-box"><div class="scrollscreen--content">
+                <div class="row gx-4">
+
+                    <div class="col-xl-7">
+
+                        <div class="news-card-four">
+                            <img src="./Baxo - Responsive Blog HTML Template_files/675JU8.jpg" alt="Image">
+
+                                                        
+                            <a class="play-now" href="http://localhost/baxo/index.php#quickview-modal" onclick="change_link(&quot;6mdxy3zohEk&quot;);" data-bs-toggle="modal">
+                                <i class="flaticon-play-button"></i>
+                                <span class="ripple"></span>
+                            </a>
+                            <div class="news-card-info">
+                                <h3><a href="http://localhost/baxo/index.php#quickview-modal" data-bs-toggle="modal" onclick="change_link(&quot;6mdxy3zohEk&quot;);">आलिया भट्ट और रणवीर सिंह स्टारर फिल्म रॉकी और रानी की प्रेम कहानी का टीजर जारी.</a></h3>
+                                <ul class="news-metainfo list-style">
+                                    <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-07-06</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="news-card-four">
+                            <img src="./Baxo - Responsive Blog HTML Template_files/M4T289.jpg" alt="Image">
+
+                                                        
+                            <a class="play-now" href="http://localhost/baxo/index.php#quickview-modal" onclick="change_link(&quot;bueqZ5bNx0s&quot;);" data-bs-toggle="modal">
+                                <i class="flaticon-play-button"></i>
+                                <span class="ripple"></span>
+                            </a>
+                            <div class="news-card-info">
+                                <h3><a href="http://localhost/baxo/index.php#quickview-modal" data-bs-toggle="modal" onclick="change_link(&quot;bueqZ5bNx0s&quot;);">बॉलीवुड एक्ट्रेस कंगना रनौत ने कामाख्या शक्तिपीठ के किये दर्शन</a></h3>
+                                <ul class="news-metainfo list-style">
+                                    <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-07-06</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-5">
+                        <div class="row">
+
+                                                                <div class="col-xl-12 col-lg-6">
+                                        <div class="news-card-eight">
+                                            <img src="./Baxo - Responsive Blog HTML Template_files/5JT4G1.jpg" alt="Image">
+                                            <a class="play-now" href="http://localhost/baxo/index.php#quickview-modal" onclick="change_link(&quot;8EPJiFfWRfw&quot;);" data-bs-toggle="modal">
+                                                <i class="flaticon-play-button"></i>
+                                                <span class="ripple"></span>
+                                            </a>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/index.php#quickview-modal" onclick="change_link(&quot;8EPJiFfWRfw&quot;);" data-bs-toggle="modal">‘सत्यप्रेम की कथा’ को मिली अच्छी ओपेनिंग, पहले दिन की इतनी कमाई</a></h3>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-07-06</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-xl-12 col-lg-6">
+                                        <div class="news-card-eight">
+                                            <img src="./Baxo - Responsive Blog HTML Template_files/2WS0VY.jpg" alt="Image">
+                                            <a class="play-now" href="http://localhost/baxo/index.php#quickview-modal" onclick="change_link(&quot;HcDMtCLXpsA&quot;);" data-bs-toggle="modal">
+                                                <i class="flaticon-play-button"></i>
+                                                <span class="ripple"></span>
+                                            </a>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/index.php#quickview-modal" onclick="change_link(&quot;HcDMtCLXpsA&quot;);" data-bs-toggle="modal">संजय मिश्रा की फिल्म 'गिद्ध' को मिली ऑस्कर में एंट्री</a></h3>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-07-06</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-xl-12 col-lg-6">
+                                        <div class="news-card-eight">
+                                            <img src="./Baxo - Responsive Blog HTML Template_files/CN4P71.jpg" alt="Image">
+                                            <a class="play-now" href="http://localhost/baxo/index.php#quickview-modal" onclick="change_link(&quot;-CDHLe1bY94&quot;);" data-bs-toggle="modal">
+                                                <i class="flaticon-play-button"></i>
+                                                <span class="ripple"></span>
+                                            </a>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/index.php#quickview-modal" onclick="change_link(&quot;-CDHLe1bY94&quot;);" data-bs-toggle="modal">दिल्ली यूनिवर्सिटी से पीएम मोदी </a></h3>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-07-04</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div><div class="scrollscreen--track" style="opacity: 1;"><div class="scrollscreen--slider" style="height: 437.371px; transform: translateY(184.369px);"></div></div></div>
+
+            <div class="video-slider-wrap">
+                <div class="video-slider swiper swiper-initialized swiper-horizontal swiper-autoheight swiper-backface-hidden">
+                    <div class="swiper-wrapper" style="cursor: grab; height: 197px;" id="swiper-wrapper-9b1103361e7943e9b" aria-live="polite">
+
+                           
+                                
+                               
+                                
+                               
+                                
+                               
+                                
+                                                    
+                        
+
+                    <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 4" style="width: 351.333px; margin-right: 25px;" data-swiper-slide-index="0">
+                                    <div class="news-card-nine">
+                                            <img src="./Baxo - Responsive Blog HTML Template_files/O5D0N4.jpg" alt="Image">
+                                            <a class="play-now" href="http://localhost/baxo/index.php#quickview-modal" onclick="change_link(&quot;09F0m36Kgvo&quot;);" data-bs-toggle="modal">
+                                                <i class="flaticon-play-button"></i>
+                                                <span class="ripple"></span>
+                                            </a>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/index.php#quickview-modal" onclick="change_link(&quot;09F0m36Kgvo&quot;);" data-bs-toggle="modal">बाढ़-बारिश से कौन-कौन से राज्य प्रभावित</a></h3>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-07-04</a></li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                </div><div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 4" style="width: 351.333px; margin-right: 25px;" data-swiper-slide-index="1">
+                                    <div class="news-card-nine">
+                                            <img src="./Baxo - Responsive Blog HTML Template_files/2VM5Q6.jpg" alt="Image">
+                                            <a class="play-now" href="http://localhost/baxo/index.php#quickview-modal" onclick="change_link(&quot;rBF5qcoizE4&quot;);" data-bs-toggle="modal">
+                                                <i class="flaticon-play-button"></i>
+                                                <span class="ripple"></span>
+                                            </a>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/index.php#quickview-modal" onclick="change_link(&quot;rBF5qcoizE4&quot;);" data-bs-toggle="modal">SDM Jyoti Maurya को भी मिला धोखा? </a></h3>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-07-04</a></li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                </div><div class="swiper-slide" role="group" aria-label="3 / 4" style="width: 351.333px; margin-right: 25px;" data-swiper-slide-index="2">
+                                    <div class="news-card-nine">
+                                            <img src="./Baxo - Responsive Blog HTML Template_files/3CX45S.jpg" alt="Image">
+                                            <a class="play-now" href="http://localhost/baxo/index.php#quickview-modal" onclick="change_link(&quot;EEHpARQt-l8&quot;);" data-bs-toggle="modal">
+                                                <i class="flaticon-play-button"></i>
+                                                <span class="ripple"></span>
+                                            </a>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/index.php#quickview-modal" onclick="change_link(&quot;EEHpARQt-l8&quot;);" data-bs-toggle="modal">हिन्दुस्तान में सुरक्षित हैं मुसलमान, गर बर्क नहीं हैं तो जाएं पाकिस्तान </a></h3>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-07-04</a></li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                </div><div class="swiper-slide" role="group" aria-label="4 / 4" style="width: 351.333px; margin-right: 25px;" data-swiper-slide-index="3">
+                                    <div class="news-card-nine">
+                                            <img src="./Baxo - Responsive Blog HTML Template_files/F7UGG2.jpg" alt="Image">
+                                            <a class="play-now" href="http://localhost/baxo/index.php#quickview-modal" onclick="change_link(&quot;uecjN1cjGz8&quot;);" data-bs-toggle="modal">
+                                                <i class="flaticon-play-button"></i>
+                                                <span class="ripple"></span>
+                                            </a>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/index.php#quickview-modal" onclick="change_link(&quot;uecjN1cjGz8&quot;);" data-bs-toggle="modal">सरकार 9 साल की उपलब्धियों का कर रही बखान, विपक्ष BJP के रिपोर्ट कार्ड को बता रहा झूठ का पुलिंदा</a></h3>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-07-04</a></li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                </div></div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                <div class="video-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-9b1103361e7943e9b"><i class="flaticon-left-arrow"></i></div>
+                <div class="video-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-9b1103361e7943e9b"><i class="flaticon-right-arrow"></i></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="latest-news pb-10">
+        <div class="container-fluid">
+            <div class="content-wrapper">
+
+                <div class="left-content">
+
+                    <div class="row align-items-end mb-40">
+                        <div class="col-md-7">
+                            <h2 class="section-title">Latest News<img class="section-title-img" src="./Baxo - Responsive Blog HTML Template_files/section-img.webp" alt="Image"></h2>
+                        </div>                       
+                    </div>
+
+                    <div class="row gx-5">
+
+                        <div class="col-xl-7">
+                            <div class="scrollscreen"><div class="scrollscreen--content">
+
+                                                                        <div class="news-card-five">
+                                            <div class="news-card-img">
+                                                <img src="./Baxo - Responsive Blog HTML Template_files/4N8T81.jpg" alt="Image">
+                                                
+                                            </div>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/details-MzMzMw==">फिल्म ‘द क्रू’ अगले साल 22 मार्च को होगी रिलीज.</a></h3>
+                                                <p></p><p><strong>बॉलीवुड न्यूज़:&nbsp;</strong>फिल्म 'द क्रू' की रिलीज डेट सामने आ गई है और यह फिल्म अगले साल आएगी।&nbsp;'द क्रू' 22 ...</p>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-07-06</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                                                            <div class="news-card-five">
+                                            <div class="news-card-img">
+                                                <img src="./Baxo - Responsive Blog HTML Template_files/4M3N22.jpg" alt="Image">
+                                                
+                                            </div>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/details-MzMzMg==">रजनीकांत की फिल्म 'जेलर'  का एक नया पोस्टर जारी.</a></h3>
+                                                <p></p><p><strong>(बॉलीवुड डेस्क):&nbsp;</strong>रजनीकांत की आगामी फिल्म 'जेलर' &nbsp;का एक नया पोस्टर जारी किया है, जिसमें तमन्ना भाटिया हरे रंग की ...</p>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-07-06</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                                                            <div class="news-card-five">
+                                            <div class="news-card-img">
+                                                <img src="./Baxo - Responsive Blog HTML Template_files/2941AJ.jpg" alt="Image">
+                                                
+                                            </div>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/details-MzMzMQ==">भारतीय जनता पार्टी प्रेमनगर कांवली मंडल अध्यक्ष अंजू बिष्ट को जन्मदिवस पर दी बधाई.</a></h3>
+                                                <p></p><p><strong>देहरादून, खबर न्यू इंडिया (न्यूज़ डेस्क):&nbsp;</strong>भारतीय जनता पार्टी प्रेम नगर कांवली अनुसूचित मोर्चा मंडल अध्यक्ष सुरेंद्र कुमार घेयल के ...</p>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-07-06</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                                                            <div class="news-card-five">
+                                            <div class="news-card-img">
+                                                <img src="./Baxo - Responsive Blog HTML Template_files/9F337J.jpg" alt="Image">
+                                                
+                                            </div>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/details-MzMzMA==">मुख्यमंत्री पुष्कर सिंह धामी ने डॉ. श्यामा प्रसाद मुखर्जी की जयंती पर श्रद्धांजलि अर्पित की.</a></h3>
+                                                <p></p><p><strong>देहरादून, खबर न्यू इंडिया (न्यूज़ डेस्क):&nbsp;</strong>मुख्यमंत्री&nbsp;पुष्कर सिंह धामी ने गुरुवार को डॉ. श्यामा प्रसाद मुखर्जी की जयंती पर उनके ...</p>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-07-06</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                                                            <div class="news-card-five">
+                                            <div class="news-card-img">
+                                                <img src="./Baxo - Responsive Blog HTML Template_files/R99RU0.jpg" alt="Image">
+                                                
+                                            </div>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/details-MzMyMg==">ऋषिकेश से कर्णप्रयाग सिर्फ 4 घंटे का सफर.</a></h3>
+                                                <p></p><p>यह देखना बेहद सुखद है कि यह प्रोजेक्ट धीरे-धीरे आकार ले रहा है। और अगर इसी स्पीड से काम ...</p>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-06-29</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                                                            <div class="news-card-five">
+                                            <div class="news-card-img">
+                                                <img src="./Baxo - Responsive Blog HTML Template_files/5M723I.jpg" alt="Image">
+                                                
+                                            </div>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/details-MzMyMQ==">जुलाई के मध्य से देहरादून और पिथौरागढ़ के बीच विमान सेवा हो सकती है शुरू.</a></h3>
+                                                <p></p><p>जुलाई के मध्य तक उत्तराखंड में पिथौरागढ़ हवाई पट्टी से हवाई सेवा एक बार फिर से शुरू हो सकती ...</p>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-06-29</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                                                            <div class="news-card-five">
+                                            <div class="news-card-img">
+                                                <img src="./Baxo - Responsive Blog HTML Template_files/NK2ZY7.jpg" alt="Image">
+                                                
+                                            </div>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/details-MzMyMA==">बदरीनाथ में नहीं पढ़ी जाएगी ईद की नमाज.</a></h3>
+                                                <p></p><p>मंगलवार को यहां पंडा समाज व तीर्थ पुरोहितों ने बैठक कर अपनी बात पुलिस के सामने रखी। अगर किसी ...</p>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-06-29</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                                                            <div class="news-card-five">
+                                            <div class="news-card-img">
+                                                <img src="./Baxo - Responsive Blog HTML Template_files/T1262S.jpg" alt="Image">
+                                                
+                                            </div>
+                                            <div class="news-card-info">
+                                                <h3><a href="http://localhost/baxo/details-MzMxOQ==">उत्तराखंड में स्कूली छात्रों के लिए  फ्री में मिलेगी JEE और NEET की कोचिंग.</a></h3>
+                                                <p></p><p>सरकारी स्कूल के छात्रों को जेईई और नीट की कोचिंग दी जाएगी, वो भी बिल्कुल मुफ्त। शुरुआत में यह ...</p>
+                                                <ul class="news-metainfo list-style">
+                                                    <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-06-29</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                                                                             
+                            </div><div class="scrollscreen--track" style="opacity: 1;"><div class="scrollscreen--slider" style="height: 270.553px; transform: translateY(0px);"></div></div></div>
+                        </div>
+
+                        <div class="col-xl-5">
+
+                            <div class="news-card-two">
+                                <div class="news-card-img">
+                                    <img src="./Baxo - Responsive Blog HTML Template_files/R93012.jpg" alt="Image">                                    
+                                </div>
+
+                                <div class="news-card-info">
+                                    <h3><a href="http://localhost/baxo/details-MzMxOA==">ग्लेशियर की जड़ में बनी झीलों को वक्त रहते किया जाएगा पंक्चर.</a></h3>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-06-29</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="news-card-three">
+                                <div class="news-card-img">
+                                    <img src="./Baxo - Responsive Blog HTML Template_files/H73134.jpg" alt="Image">                                    
+                                </div>
+                                <div class="news-card-info">
+                                    <h3><a href="http://localhost/baxo/details-MzMxNg==">Rakesh Tikait: जब तक हमें न्यूनतम समर्थन मूल्य की गारंटी नहीं मिल जाती है, ...</a></h3>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-01-24</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="news-card-three">
+                                <div class="news-card-img">
+                                    <img src="./Baxo - Responsive Blog HTML Template_files/03V5Z6.jpg" alt="Image">                                    
+                                </div>
+                                <div class="news-card-info">
+                                    <h3><a href="http://localhost/baxo/details-MzMxNQ==">सीएम धामी के निर्देश पर पूरे प्रदेश में विद्युत समस्या समाधान शिविर किए जा ...</a></h3>
+                                    <ul class="news-metainfo list-style">
+                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-01-24</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="sidebar">
+
+                    <div class="sidebar-widget">
+                        
+                        <h3 class="sidebar-widget-title">Categories</h3>
+                        <ul class="category-widget list-style">
+                            <li><a href="http://localhost/baxo/section-MQ=="><img src="./Baxo - Responsive Blog HTML Template_files/arrow-right.svg" alt="Image">उत्तराखण्ड </a></li>
+
+                            <li><a href="http://localhost/baxo/section-MTU="><img src="./Baxo - Responsive Blog HTML Template_files/arrow-right.svg" alt="Image">उत्तरप्रदेश</a></li>
+
+                            <li><a href="http://localhost/baxo/section-MTAz"><img src="./Baxo - Responsive Blog HTML Template_files/arrow-right.svg" alt="Image">विदेश </a></li>
+
+                            <li><a href="http://localhost/baxo/section-MTk="><img src="./Baxo - Responsive Blog HTML Template_files/arrow-right.svg" alt="Image">खेल</a></li>
+
+                            <li><a href="http://localhost/baxo/section-MjY="><img src="./Baxo - Responsive Blog HTML Template_files/arrow-right.svg" alt="Image">उत्तराखण्ड विधानसभा </a></li>
+
+                            <li><a href="http://localhost/baxo/section-MjI="><img src="./Baxo - Responsive Blog HTML Template_files/arrow-right.svg" alt="Image">शिक्षा</a></li>
+
+                            <li><a href="http://localhost/baxo/section-MjU="><img src="./Baxo - Responsive Blog HTML Template_files/arrow-right.svg" alt="Image">क्राइम</a></li>
+
+                            <li><a href="http://localhost/baxo/section-MTA0"><img src="./Baxo - Responsive Blog HTML Template_files/arrow-right.svg" alt="Image">धर्म </a></li>
+
+                            <li><a href="http://localhost/baxo/section-MTA1"><img src="./Baxo - Responsive Blog HTML Template_files/arrow-right.svg" alt="Image">लाइफस्टाइल</a></li>
+
+                        </ul>
+
+</div>
+                    <div class="sidebar-widget">
+                        <h3 class="sidebar-widget-title">खेल</h3>
+                        <div class="featured-widget">
+                            <div class="featured-slider swiper swiper-initialized swiper-horizontal swiper-autoheight swiper-backface-hidden">
+                                <div class="swiper-wrapper" style="cursor: grab; height: 165px;" id="swiper-wrapper-3894ad794a03ea37" aria-live="polite">
+
+                                    
+                                        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 4" data-swiper-slide-index="0" style="width: 262px; margin-right: 15px;">
+                                            <div class="news-card-one">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/F026R3.jpg" alt="Image">
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <h3><a href="http://localhost/baxo/details-MzMwOQ==">Hockey World Cup: भारत का हॉकी वर्ल्ड कप में खत्म हुआ सफर, वर्ल्ड कप ...</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-01-23</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    
+                                        <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 4" data-swiper-slide-index="1" style="width: 262px; margin-right: 15px;">
+                                            <div class="news-card-one">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/HZVNZ2.jpg" alt="Image">
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <h3><a href="http://localhost/baxo/details-MzMwOA==">KL Rahul Athiya Shetty Wedding: केएल राहुल अथिया शेट्टी के साथ आज बंधेंगे शादी ...</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-01-23</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    
+                                        <div class="swiper-slide" role="group" aria-label="3 / 4" data-swiper-slide-index="2" style="width: 262px; margin-right: 15px;">
+                                            <div class="news-card-one">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/6D9J0H.jpg" alt="Image">
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <h3><a href="http://localhost/baxo/details-MzI5Ng==">IND vs NZ: न्यूजीलैंड के बल्लेबाजों ने टेके घुटने, 108 रनों पर ऑलआउट  .</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-01-21</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    
+                                        <div class="swiper-slide" role="group" aria-label="4 / 4" data-swiper-slide-index="3" style="width: 262px; margin-right: 15px;">
+                                            <div class="news-card-one">
+                                                <div class="news-card-img">
+                                                    <img src="./Baxo - Responsive Blog HTML Template_files/5CAA04.jpg" alt="Image">
+                                                </div>
+                                                <div class="news-card-info">
+                                                    <h3><a href="http://localhost/baxo/details-MzI4NQ==">कुश्‍ती संघ के अध्‍यक्ष बृजभूषण सिंह के समर्थन में उतरी अर्जुन अवार्डी पहलवान दिव्या ...</a></h3>
+                                                    <ul class="news-metainfo list-style">
+                                                        <li><i class="fi fi-rr-calendar-minus"></i><a href="http://localhost/baxo/index.php#">2023-01-20</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                     
+                                                                       
+
+                                </div>
+                                <div class="featured-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-3894ad794a03ea37"><i class="flaticon-left-arrow"></i></div>
+                                <div class="featured-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-3894ad794a03ea37"><i class="flaticon-right-arrow"></i></div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container-fluid pb-50">
+        <div class="instagram-slider swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a class="instagram-slide" href="https://www.instagram.com/" target="_blank">
+                        <img src="assets/img/instagram/insta-1.webp" alt="Image">
+                        <span>@Baxo on Instagram<i class="flaticon-right-arrow"></i></span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="instagram-slide" href="https://www.instagram.com/" target="_blank">
+                        <img src="assets/img/instagram/insta-2.webp" alt="Image">
+                        <span>@Baxo on Instagram<i class="flaticon-right-arrow"></i></span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="instagram-slide" href="https://www.instagram.com/" target="_blank">
+                        <img src="assets/img/instagram/insta-3.webp" alt="Image">
+                        <span>@Baxo on Instagram<i class="flaticon-right-arrow"></i></span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="instagram-slide" href="https://www.instagram.com/" target="_blank">
+                        <img src="assets/img/instagram/insta-4.webp" alt="Image">
+                        <span>@Baxo on Instagram<i class="flaticon-right-arrow"></i></span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="instagram-slide" href="https://www.instagram.com/" target="_blank">
+                        <img src="assets/img/instagram/insta-5.webp" alt="Image">
+                        <span>@Baxo on Instagram<i class="flaticon-right-arrow"></i></span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="instagram-slide" href="https://www.instagram.com/" target="_blank">
+                        <img src="assets/img/instagram/insta-6.webp" alt="Image">
+                        <span>@Baxo on Instagram<i class="flaticon-right-arrow-1"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container-fluid">
+
+        <div class="footer-wrap">
+            <div class="row align-items-center">
+
+                <div class="col-lg-4">
+                    <p class="copyright-text">© <span>Baxo</span> is proudly owned by <a href="https://hibootstrap.com/">HiBootstrap</a></p>
+                </div>
+
+                <div class="col-lg-4 text-center">
+                    <ul class="social-profile list-style">
+                        <li><a href="https://www.fb.com/" target="_blank"><i class="flaticon-facebook-1"></i></a></li>
+                        <li><a href="https://www.twitter.com/" target="_blank"><i class="flaticon-twitter-1"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="flaticon-instagram-2"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank"><i class="flaticon-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- <div class="col-lg-4">
+                    <div class="footer-right">
+                        <button class="subscribe-btn" data-bs-toggle="modal" data-bs-target="#newsletter-popup">Become a
+                            subscriber<i class="flaticon-right-arrow"></i></button>
+                        <p>Get all the latest posts delivered straight to your inbox.</p>
+                    </div>
+                </div> -->
+
+            </div>
+</div>
+    </div>
+
+    <button type="button" id="backtotop" class="position-fixed text-center border-0 p-0" style="opacity: 1;">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <!-- <div class="modal fade" id="newsletter-popup" tabindex="-1" aria-labelledby="newsletter-popup" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fi fi-rr-cross"></i>
+                </button>
+                <div class="modal-body">
+                    <div class="newsletter-bg bg-f"></div>
+                    <div class="newsletter-content">
+                        <img src="assets/img/newsletter-icon.webp" alt="Image" class="newsletter-icon">
+                        <h2>Join Our Newsletter & Read The New Posts First</h2>
+                        <form action="#" class="newsletter-form">
+                            <input type="email" placeholder="Email Address">
+                            <button type="button" class="btn-one">Subscribe<i class="flaticon-arrow-right"></i></button>
+                        </form>
+                        <div class="form-check checkbox">
+                            <input class="form-check-input" type="checkbox" id="test_21">
+                            <label class="form-check-label" for="test_21">
+                                I've read and accept <a href="privacy-policy.html">Privacy Policy</a>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="modal fade" id="quickview-modal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="quickview-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ri-close-line"></i>
+                </button>
+                <div class="modal-body">
+                    <div class="video-popup">
+                        <iframe id="video-popup-iframe" width="885" height="498" src="./Baxo - Responsive Blog HTML Template_files/3FjT7etqxt8.html" title="How to Design an Elvis Movie Poster in Photoshop" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script data-cfasync="false" src="./Baxo - Responsive Blog HTML Template_files/email-decode.min.js.download"></script>
+    <script src="./Baxo - Responsive Blog HTML Template_files/bootstrap.bundle.min.js.download"></script>
+    <script src="./Baxo - Responsive Blog HTML Template_files/swiper.bundle.min.js.download"></script>
+    <script src="./Baxo - Responsive Blog HTML Template_files/aos.js.download"></script>
+    <script src="./Baxo - Responsive Blog HTML Template_files/main.js.download"></script>
+
+        <!-- for changing link in popup iframe  -->
+        <script>
+            function change_link(vidcode)
+            {
+                console.log('here');
+                document.getElementById("video-popup-iframe").setAttribute("src","https://www.youtube.com/embed/".concat(vidcode) ); 
+            }
+        </script>
+
+
+
+
+</b></b></body><!-- Mirrored from templates.hibootstrap.com/baxo/default/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 Jun 2023 07:00:43 GMT --></html>

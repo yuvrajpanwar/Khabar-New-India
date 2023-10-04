@@ -1,0 +1,314 @@
+<script>
+  function copy(element_id) {
+    //   var aux = document.createElement("div");
+    //   aux.setAttribute("contentEditable", true);
+    //   aux.innerHTML = document.getElementById(element_id).innerHTML;
+    //   aux.setAttribute("onfocus", "document.execCommand('selectAll',false,null)");
+    //   document.body.appendChild(aux);
+    //   aux.focus();
+    //   document.execCommand("copy");
+    //   document.body.removeChild(aux);
+
+    var paraHtml = document.getElementById(element_id);
+    //alert(paraHtml);
+    paraHtml.select();
+    navigator.clipboard.writeText(paraHtml.value);
+    //   alert("Copied the text: " + paraHtml.value);
+  }
+
+  function delete_media_file(string_data) {
+    var post_data = { mid: string_data };
+
+    $.ajax({
+      url: "media_delete_handler.php",
+      type: "POST",
+      data: post_data,
+      cache: false,
+      success: function (html) {
+        //alert(html);
+        var res = string_data.split(".");
+        var record_id = res[0];
+        $("#block-" + record_id).hide();
+      },
+      //error: function(){}
+    });
+  }
+
+  $(document).ready(function () {
+    //             var editor = CKEDITOR.replace('editor1');//, {height : 380});
+    //              alert(CKEDITOR);
+    // 			 CKEDITOR.on( 'loaded', function( evt ) {
+    //     // your stuff here
+    // 	alert('test');
+    // } );
+    CKEDITOR.replace("editor1", {
+      on: {
+        instanceReady: function (ev) {
+          // your stuff here
+          ev.editor.dataProcessor.htmlFilter.addRules({
+            elements: {
+              img: function (el) {
+                // Add bootstrap "img-responsive" class to each inserted image
+                el.addClass("img-responsive");
+
+                // Remove inline "height" and "width" styles and
+                // replace them with their attribute counterparts.
+                // This ensures that the 'img-responsive' class works
+                var style = el.attributes.style;
+
+                if (style) {
+                  // Get the width from the style.
+                  var match = /(?:^|\s)width\s*:\s*(\d+)px/i.exec(style),
+                    width = match && match[1];
+
+                  // Get the height from the style.
+                  match = /(?:^|\s)height\s*:\s*(\d+)px/i.exec(style);
+                  var height = match && match[1];
+
+                  // Replace the width
+                  if (width) {
+                    el.attributes.style = el.attributes.style.replace(
+                      /(?:^|\s)width\s*:\s*(\d+)px;?/i,
+                      ""
+                    );
+                    // el.attributes.width = width;
+                  }
+
+                  // Replace the height
+                  if (height) {
+                    el.attributes.style = el.attributes.style.replace(
+                      /(?:^|\s)height\s*:\s*(\d+)px;?/i,
+                      ""
+                    );
+                    // el.attributes.height = height;
+                  }
+                }
+
+                // Remove the style tag if it is empty
+                if (!el.attributes.style) delete el.attributes.style;
+              },
+            },
+          });
+        },
+      },
+    });
+    CKEDITOR.editorConfig = function (config) {
+      config.toolbarGroups = [
+        { name: "document", groups: ["mode", "document", "doctools"] },
+        { name: "clipboard", groups: ["clipboard", "undo"] },
+        {
+          name: "editing",
+          groups: ["find", "selection", "spellchecker", "editing"],
+        },
+        { name: "forms", groups: ["forms"] },
+        "/",
+        { name: "basicstyles", groups: ["basicstyles", "cleanup"] },
+        {
+          name: "paragraph",
+          groups: ["list", "indent", "blocks", "align", "bidi", "paragraph"],
+        },
+        { name: "links", groups: ["links"] },
+        { name: "insert", groups: ["insert"] },
+        "/",
+        { name: "styles", groups: ["styles"] },
+        { name: "colors", groups: ["colors"] },
+        { name: "tools", groups: ["tools"] },
+        { name: "others", groups: ["others"] },
+        { name: "about", groups: ["about"] },
+      ];
+    };
+
+    var radioValue = $("input[name='video_type']:checked").val();
+
+    if (radioValue == "other") {
+      $("#video_link_type_youtube").hide();
+      $("#video_link").val("");
+      $("#video_upload_type_other").show();
+    } else {
+      $("#video_link_type_youtube").show();
+      $("#video_upload_type_other").hide();
+    }
+
+    $("input[type=radio][name=video_type]").change(function () {
+      if (this.value == "other") {
+        $("#video_link_type_youtube").hide();
+        $("#video_upload_type_other").show();
+      } else if (this.value == "youtube") {
+        $("#video_upload_type_other").hide();
+        $("#video_link_type_youtube").show();
+      }
+    });
+
+    $("#video_check").change(function () {
+      if (this.checked) {
+        $(".Link_block").show();
+      } else {
+        $(".Link_block").hide();
+      }
+    });
+
+    $("#choose_tag").click(function () {
+      $("#tag_id").toggle();
+    });
+
+    $("#save_click").click(function () {
+      var type = $("#news_type").val();
+      var content = CKEDITOR.instances["editor1"].getData();
+      if (content == "" && type == "Text News") {
+        alert("Please Provide News Content.");
+        return false;
+      }
+    });
+
+    $("#news_type").change(function () {
+      var type = $("#news_type").val();
+      if (type == "Text News") {
+        if ($("#video_check").is(":checked")) $(".Link_block").show();
+        else $(".Link_block").hide();
+
+        $(".content_block").show();
+        $(".news_img_bock").show();
+        $("#content_image_section").show();
+      }
+      if (type == "Video News") {
+        $(".content_block").hide();
+        $(".news_img_bock").show();
+
+        //if ($('#video_check').is(":checked"))
+        $(".Link_block").show();
+        //else
+        //	$(".Link_block").hide();
+        $("#content_image_section").hide();
+      }
+    });
+
+    $(".reply").click(function () {
+      //alert("hello");
+      var data = $(this).attr("id");
+      //alert(data);
+      $("#hid").val(data);
+      $("#commentbox").show();
+    });
+
+    $(".close").click(function (event) {
+      $("#content_img").val("");
+      $("#commentbox").hide();
+    });
+
+    $("#change-status").on("submit", function (e) {
+      e.preventDefault();
+      $.ajax({
+        url: "content_image_upload_handler.php",
+        type: "POST",
+        data: new FormData(this),
+        contentType: false,
+        cache: false,
+        processData: false,
+        success: function (data) {
+          if (data == "no") {
+            alert("Please Select a Image");
+            return false;
+          } else if (data == "invalid") {
+            alert("Please Select a Valid Image");
+            return false;
+          } else if (data == "size") {
+            alert("File too large. File must be less than 2 Mb.");
+            return false;
+          } else {
+            $(".image_container").append(data);
+            $("#content_img").val("");
+            $("#commentbox").hide();
+
+            //window.location.reload();
+          }
+        },
+        error: function () {},
+      });
+    });
+  });
+
+  (function ($, W, D) {
+    var JQUERY4U = {};
+
+    JQUERY4U.UTIL = {
+      setupFormValidation: function () {
+        //form validation rules
+        $("#post_form").validate({
+          rules: {
+            news_type: {
+              required: true,
+            },
+            title: {
+              required: true,
+            },
+            slug_title: {
+              required: true,
+            },
+            created_on: {
+              required: true,
+            },
+            video_link: {
+              required: {
+                depends: function (element) {
+                  return $("#news_type").val() == "Video News";
+                },
+              },
+            },
+            post_img: {
+              required: true,
+
+              // required: {
+              // 		depends: function(element) {
+              // 			return $('#news_type').val() == 'Text News';
+              // 		}
+              // },
+              // accept: "jpg,jpeg,png",
+            },
+            "catgeory_id[]": {
+              required: true,
+              minlength: 1,
+            },
+            writer: {
+              required: true,
+            },
+          },
+          messages: {
+            news_type: {
+              required: "Please Select News Type",
+            },
+            title: {
+              required: "Please Provide Title",
+            },
+            slug_title: {
+              required: "Please Provide Slug.",
+            },
+            created_on: {
+              required: "Please Provide Post Date.",
+            },
+            video_link: {
+              required: "Please Provide Video Link.",
+            },
+            post_img: {
+              required: "Please Provide Post Image.",
+              accept: "Only Jpg and Png File Allow For Upload.",
+            },
+            "catgeory_id[]": {
+              required: "Please Select Category.",
+            },
+            writer: {
+              required: "Please Provide Author Name.",
+            },
+          },
+          submitHandler: function (form) {
+            form.submit();
+          },
+        });
+      },
+    };
+
+    //when the dom has loaded setup form validation rules
+    $(D).ready(function ($) {
+      JQUERY4U.UTIL.setupFormValidation();
+    });
+  })(jQuery, window, document);
+</script>
